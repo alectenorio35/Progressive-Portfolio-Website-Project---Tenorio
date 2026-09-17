@@ -104,15 +104,6 @@ body {
   margin: 0 auto 30px;
 }
 
-/* Forces the 3rd card (Goals) to span across both columns on the bottom */
-.about-bio:nth-child(3) {
-  grid-column: span 2;
-}
-
-.about-bio:nth-child(4) {
-  grid-column: span 2;
-}
-
 .about-bio {
   font-size: 1.1rem;
   color: #555;
@@ -122,4 +113,52 @@ body {
   padding: 15px 25px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-bio.wide {
+  grid-column: span 2;
+}
+
+/* Skills Section */
+.skills-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.skills-section h2 {
+  text-align: center;
+  color: #1f354b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #dfe6ee;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px 18px;
+  text-align: left;
+}
+
+.skill-card h3 {
+  margin: 0 0 10px;
+  color: #1f354b;
+  font-size: 1.2rem;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.98rem;
 }
