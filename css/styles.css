@@ -1,0 +1,125 @@
+/* Center content and set a clean background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #4d5a68;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Style the main heading */
+#fullname {
+  font-size: 2rem;
+  color: #1f354b;
+  margin-bottom: 10px;
+}
+
+#about-me-heading {
+  text-align: center;
+  color: #24292e;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #1f354b;
+}
+
+
+/* Style the paragraph */
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;            
+  align-items: stretch;
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #555;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+
+#learn-more-btn {
+  display: inline-block;
+  padding: 0.8rem 1.75rem;
+  background-color: #24292e;
+  color: #f4f3f5;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 8px;
+  font-family: arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;                             
+  text-decoration: none;
+  text-align: center;       
+}
+
+/* Style for about-me page */
+#home-btn {
+  position: absolute;
+  top: 20px;  /* Distance from the top */
+  left: 20px; /* Distance from the left edge */
+  display: inline-block;
+  padding: 0.8rem 1.75rem;
+  background-color: #24292e;
+  color: #f4f3f5;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 8px;
+  font-family: arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;                             
+  text-decoration: none;
+  text-align: center;       
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;            
+  max-width: 900px;   
+  margin: 0 auto 30px;
+}
+
+/* Forces the 3rd card (Goals) to span across both columns on the bottom */
+.about-bio:nth-child(3) {
+  grid-column: span 2;
+}
+
+.about-bio:nth-child(4) {
+  grid-column: span 2;
+}
+
+.about-bio {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
