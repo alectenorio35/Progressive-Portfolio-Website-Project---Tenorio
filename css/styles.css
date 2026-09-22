@@ -49,10 +49,12 @@ body {
 
 .bio {
   font-size: 1.1rem;
+  line-height: 3;
+  letter-spacing: 0.02em;
   color: #555;
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  margin: 3px 3px 0;
   text-align: justify;
   background-color: #ffffff;
   padding: 15px 25px;
@@ -98,7 +100,7 @@ body {
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
   gap: 20px;            
   max-width: 900px;   
   margin: 0 auto 30px;
@@ -106,6 +108,8 @@ body {
 
 .about-bio {
   font-size: 1.1rem;
+  line-height: 3;
+  letter-spacing: 0.02em;
   color: #555;
   margin: 0;
   text-align: justify;
@@ -117,6 +121,15 @@ body {
 
 .about-bio.wide {
   grid-column: span 2;
+}
+
+.goals-list {
+  line-height: 3;
+  letter-spacing: 0.02em;
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: justify;
+  margin: 0;
 }
 
 /* Skills Section */
@@ -137,7 +150,7 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -161,4 +174,5 @@ body {
   color: #555;
   line-height: 1.5;
   font-size: 0.98rem;
+  text-align: justify;
 }
