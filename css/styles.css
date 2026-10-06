@@ -24,6 +24,7 @@ section {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -386,6 +387,96 @@ section {
 
 .credentials-table tbody tr:hover {
   background-color: #edf4fb;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #1f354b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border: 1px solid #dfe6ee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(31, 53, 75, 0.08);
+  padding: 30px 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #1f354b;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #c9d6e2;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #2d3b47;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1f354b;
+  box-shadow: 0 0 0 3px rgba(31, 53, 75, 0.12);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  border: none;
+  background-color: #1f354b;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2f4f70;
+  transform: translateY(-1px);
+}
+
+.submit-btn:focus {
+  outline: 2px solid #7aa4ca;
+  outline-offset: 2px;
 }
 
 
