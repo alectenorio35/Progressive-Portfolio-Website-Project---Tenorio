@@ -265,18 +265,56 @@ body {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 420px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+.credentials-table-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
+.credentials-table-section h2 {
+  text-align: center;
+  color: #1f354b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.credentials-table-container {
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #dfe6ee;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.credentials-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #4d5a68;
+}
+
+.credentials-table thead th {
+  background-color: #1f354b;
+  color: #ffffff;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 1rem;
+}
+
+.credentials-table tbody td {
+  padding: 14px 16px;
+  border-top: 1px solid #dfe6ee;
+  text-align: left;
+}
+
+.credentials-table tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.credentials-table tbody tr:hover {
+  background-color: #edf4fb;
+}
+
+
